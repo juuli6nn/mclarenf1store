@@ -1,0 +1,165 @@
+en
+config t
+int se
+
+ip add 192.168.68. 255.255.255.252
+
+
+/25 (2)
+ip add 192.168.68.1 255.255.255.128
+
+TIPS:
+en - enable
+config t - configure terminal
+password
+login
+exit
+int - interface
+do wr - save
+no ip domain lookup - no loading
+------------------------------------------------------
+
+step 1 (ip add)(routers)
+config t
+int se0/3/0
+ip add 192.168.1.1 255.255.255.252 | (router 2 ip add) 192.168.1.2 255.255.255.252
+no shut
+
+
+
+step 2 (pinging each other) (router2 pov - 1.2)
+Router>en
+Router#ping 192.168.1.1
+
+step 3 (router1 > switch1)
+Router#config t
+Router(config)#int g0/0
+Router(config-if)#ip add 192.168.100.1 255.255.255.0
+no shut
+
+192.168.100.1 IP GATEWAY FOR PC1s
+192.168.100.11 PC0 - ipv4 add
+192.168.100.12 PC2 - ipv4 add
+
+(router2 > switch2)
+en
+config t
+int g0/0
+#ip add 192.168.200.1 255.255.255.0
+no shut
+
+192.168.200.1
+192.168.200.11 PC3 - ipv4 add
+192.168.200.12 PC4 - ipv4 add
+
+-----------------------------------------------------
+
+(router1 > router2)
+Router(config)#router rip
+Router(config-router)#ver 2
+Router(config-router)#network 192.168.1.1
+Router(config-router)#network 192.168.100.1
+Router(config-router)#network 192.168.200.1
+
+(router2 > router1)
+router rip
+ver 2
+network 192.168.1.1
+network 192.168.100.1
+network 192.168.200.1
+
+router rip
+ver 2
+network 192.168.67.0
+network 192.168.68.0
+do wr
+
+
+
+
+======================================================
+IPv6!
+[STEP 1] [POV: Router]: Router To Router
+NOTES:
+
+2001:db8:acad:8::[1]/64
+- 1 UNIQUE number, (can be HEXTET 0001)
+
+2001:db8:acad:[8]::1/64
+- 8 is the subnet, NOT UNIQUE number
+
+
+[POV: ROUTER]: Router to Router
+en
+config t
+hostname R1
+int se0/3/0
+ipv6 add 2001:db8:acad:8::1/64
+ipv6 eigrp 1   
+no shut
+
+
+
+
+
+[STEP 2] [POV: Router]: Router to Switch
+NOTES: 
+1.) 2001:db8:acad:[88]::1/64  
+UNIQUE subset and num
+
+[Device]
+2.) 2001:db8:acad:[88]::1/64  
+UNIQUE subset and num
+[POV: ROUTER]: Router to Switch
+
+
+en
+config t
+
+int g0/0
+ipv6 add 2001:db8:acad:88::1/64 = Default Gateway
+ipv6 eigrp 1
+no shut
+
+[POV: DEVICE]: PC1
+default gateway: 2001:db8:acad:88::1 / 64 
+			       []
+[POV: DEVICE]: PC2
+default gateway: 2001:db8:acad:888::1 / 64 
+			       [ ]
+
+
+
+
+[STEP 3] [POV: ROUTER(R1,R2)]: PCs from S1 to PCs from S2
+en
+config t
+
+ipv6 unicast-routing
+ipv6 router eigrp 1
+eigrp router-id 1.1.1.1
+no shut
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

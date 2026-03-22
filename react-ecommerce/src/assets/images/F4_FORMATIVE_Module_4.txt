@@ -1,0 +1,181 @@
+RECORDED CANVAS QUIZ QUESTIONS
+==============================
+
+Recorded on: 2/7/2026 at 11:13:13 AM
+
+Total Questions: 20
+
+------------------------------------------
+
+Question 1
+React hook used to access DOM elements or persist values across renders.
+
+Your Answer: SPREAD OPERATOR
+
+------------------------------------------
+
+Question 2
+Which of the following is a reason to use a JavaScript framework?
+
+Answer Choices:
+A. To avoid learning HTML and CSS
+B. To write less JavaScript
+C. To make JavaScript optional
+D. To manage DOM, state, and routing efficiently (SELECTED)
+
+------------------------------------------
+
+Question 3
+React hook used to manage state in functional components.
+
+Your Answer: USESTATE
+
+------------------------------------------
+
+Question 4
+Vue 3 feature that provides more flexibility for organizing component logic, similar to React Hooks.
+
+Your Answer: COMPOSITION API
+
+------------------------------------------
+
+Question 5
+Angular is opinionated and uses TypeScript by default.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 6
+The library maintained by Meta/Facebook, known for its component-based architecture.
+
+Your Answer: REACT
+
+------------------------------------------
+
+Question 7
+Angular feature for adding metadata to classes and properties.
+
+Your Answer: DECORATORS
+
+------------------------------------------
+
+Question 8
+The full-featured, opinionated framework maintained by Google that uses TypeScript by default.
+
+Your Answer: ANGULAR
+
+------------------------------------------
+
+Question 9
+React strictly requires class components for all applications.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 10
+React concept used to store data that changes over time within a component.
+
+Your Answer: STATE
+
+------------------------------------------
+
+Question 11
+React’s philosophy can be summarized as:
+
+Answer Choices:
+A. UI is static
+B. UI must always use class components
+C. UI is a function of state (SELECTED)
+D. UI is independent of state
+
+------------------------------------------
+
+Question 12
+Which framework/library is maintained by Meta/Facebook?
+
+Answer Choices:
+A. Vue
+B. Ember
+C. Angular
+D. React (SELECTED)
+
+------------------------------------------
+
+Question 13
+Component-based architecture allows reuse of UI pieces.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 14
+Using a framework always eliminates the need to learn JavaScript.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 15
+The Composition API in Vue 3 is:
+
+Answer Choices:
+A. Mandatory
+B. Deprecated
+C. Optional (SELECTED)
+D. Exclusive to Vue 2
+
+------------------------------------------
+
+Question 16
+Angular’s dependency injection is used to:
+
+Answer Choices:
+A. Replace routing
+B. Manage services efficiently (SELECTED)
+C. Handle props
+D. Update virtual DOM
+
+------------------------------------------
+
+Question 17
+Vue file format that combines template, script, and style in one component.
+
+Your Answer: SINGLE FILE COMPONENT
+
+------------------------------------------
+
+Question 18
+React is a full-featured framework including routing and forms by default.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 19
+useRef in React is used to manage DOM elements or persist values across renders.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 20
+Virtual DOM manually updates the HTML elements directly.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+

@@ -1,0 +1,635 @@
+RECORDED CANVAS QUIZ QUESTIONS
+==============================
+
+Recorded on: 2/10/2026 at 1:46:00 PM
+
+Total Questions: 60
+
+------------------------------------------
+
+Question 1
+The _________ cursors are defined by the PL/SQL  programmer.
+
+Your Answer: EXPLICIT
+
+------------------------------------------
+
+Question 2
+Boolean attribute that evaluates to TRUE if the most recent SQL statement did not return  even one row.
+
+Your Answer: SQL%NOTFOUND
+
+------------------------------------------
+
+Question 3
+Applying the logical operator NOT to a null yields FALSE.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 4
+Which of the following can have a null value?
+
+Answer Choices:
+A. UPPER BOUND OR LOWER BOUND
+B. Not in the options
+C. UPPER BOUND (SELECTED)
+D. LOWER BOUND
+
+------------------------------------------
+
+Question 5
+The use of CASE statement to test conditions such as <, >, >=, <= is know as case expression.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 6
+Given the code below:
+Which line number(s) contains error?
+
+Question Images:
+https://feu.instructure.com/assessment_questions/4375413/files/7757517/download?verifier=vpQ82CRwzHbA3GJJBFvB9ORJ1MgKPkFdttAnmIL5
+
+Answer Choices:
+A. No error
+B. Line 4
+C. Line 2
+D. Line 3 (SELECTED)
+
+------------------------------------------
+
+Question 7
+Given the code below:
+1.   DECLARE
+2.      CURSOR cur_emps
+3.                    SELECT employee_id, last_name  FROM employees;
+4.   BEGIN
+5.       FOR  cur_emps IN v_emp_record LOOP 
+6.       EXIT WHEN cur_emps%ROWCOUNT > 5;
+7.       DBMS_OUTPUT.PUT_LINE(v_emp_record.employee_id || ' ' || v_emp_record.last_name);
+8.       END LOOP;
+9.   END;
+What is missing in line 2 and 3?
+
+Answer Choices:
+A. RECORD
+B. Nothing is missing
+C. IS (SELECTED)
+D. INTO
+
+------------------------------------------
+
+Question 8
+Given the code below:
+Which line# will cause an error to the given code?
+
+Question Images:
+https://feu.instructure.com/assessment_questions/4375417/files/7757487/download?verifier=yKi2n30DoESS6tWXa1hWkWwqY2OkzkMiPwQj5SmQ
+
+Answer Choices:
+A. 11
+B. 8
+C. 10
+D. 3 (SELECTED)
+
+------------------------------------------
+
+Question 9
+Given the code below:
+ What is missing in line 10?
+
+Question Images:
+https://feu.instructure.com/assessment_questions/4375412/files/7757518/download?verifier=rzEGMLgL7XPUlo40WyoL9tP9Dpw5fc5BaHVIZYch
+
+Answer Choices:
+A. FROM
+B. Nothing is missing
+C. Cursor name (SELECTED)
+D. LOOP
+
+------------------------------------------
+
+Question 10
+Given the code below:
+1.   DECLARE
+2.      CURSOR cur_emps
+3.                    SELECT employee_id, last_name  FROM employees;
+4.   BEGIN
+5.       FOR  v_emp_record IN cur_emps  LOOP 
+6.       EXIT WHEN cur_emps%ROWCOUNT > 5;
+7.       DBMS_OUTPUT.PUT_LINE(_____________.employee_id || ' ' || ___________.last_name);
+8.       END LOOP;
+9.   END;
+What is missing in line#7?
+
+Answer Choices:
+A. Cur_emps
+B. V_EMP_RECORD (SELECTED)
+
+------------------------------------------
+
+Question 11
+The FETCH statement positions the cursor pointer at the first row.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 12
+Given the code below:
+The closing of cursor is missing.
+
+Question Images:
+https://feu.instructure.com/assessment_questions/4375409/files/7756669/download?verifier=DAUpCgGiRZZBrzYSfDaJCiciJ3bh1jojr26UQwvA
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 13
+The FETCH will populate the cursor’s active set with the result of the SELECT statement in the cursor’s definition?
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 14
+Given the code below:
+NOTFOUND is missing in line#11.
+
+Question Images:
+https://feu.instructure.com/assessment_questions/4375407/files/7756819/download?verifier=9ApERtYuqoS4V3wDpqaHtIQCW5h2vXcYVVSciV3R
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 15
+In explicit cursor operations, the set of rows returned by a multiple-row query is called RECORD SET.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 16
+Handle named exceptions whenever possible, instead of using ______ in exception handlers.
+
+Your Answer: WHEN OTHERS
+
+------------------------------------------
+
+Question 17
+When an exception is raised, control immediately shifts to the _______ and the appropriate handler in the exception section is executed.
+
+Your Answer: EXCEPTION SECTION
+
+------------------------------------------
+
+Question 18
+What is missing in the given exception syntax? ____ 
+EXCEPTION
+         WHEN  exception1  [OR  exception2  .  .  .]
+                  statement1; statement2;
+
+Your Answer: THEN
+
+------------------------------------------
+
+Question 19
+Error in PL/SQL is known as ____________.
+
+Your Answer: EXCEPTION
+
+------------------------------------------
+
+Question 20
+The exception section begins with the keyword _______.
+
+Your Answer: EXCEPTION
+
+------------------------------------------
+
+Question 21
+An exception occurs when an error is discovered during the execution of a program that disrupts the normal operation of the program.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 22
+The following statements are examples of exception. 
+Entering an expiration date that has passed
+Selecting more than one row into a single variable
+Receiving “no rows returned” from a select statement
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 23
+The OTHERS is an optional exception-handling clause that traps any exceptions that have not been explicitly handled.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 24
+In exception section, the WHEN clause if followed by a condition.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 25
+A block always terminates when PL/SQL raises an exception.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 26
+The RAISE_APPLICATION_ERROR can be used in executable and exception section.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 27
+The RAISE statement can be used to raise either user-defined or predefined exception.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 28
+Non-predefined errors are raised explicitly.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 29
+Pragma declaration is used in declaring non-predefined exceptions.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 30
+The PRAGMA clause is used in predefined exception to tell the compiler to associate an exception name with a specific Oracle error  number.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 31
+Each exception handler is consists of a _____ clause, which specifies an exception name.
+
+Answer Choices:
+A. Not in the options
+B. IF
+C. WHEN (SELECTED)
+D. CONDITION
+
+------------------------------------------
+
+Question 32
+In non-predefined exception, you must reference the ________ within a WHEN clause in the exception-handling section.
+
+Answer Choices:
+A. All the options are possible (SELECTED)
+B. Oracle associated error#
+C. Exception name
+D. Declared exception name
+
+------------------------------------------
+
+Question 33
+The oracle error number, at the PRAGMA EXCEPTION_INIT function, starts with _____.
+
+Answer Choices:
+A. 0
+B. 1
+C. UNDERSCORE
+D. HYPEN (SELECTED)
+
+------------------------------------------
+
+Question 34
+The RAISE statement can be used to raise either ________ or predefined exception.
+
+Answer Choices:
+A. NON-PREDEFINED
+B. USER-DEFINED (SELECTED)
+
+------------------------------------------
+
+Question 35
+The NO_DATA_FOUND is a _______ exception.
+
+Answer Choices:
+A. PREDEFINED (SELECTED)
+B. NON-PREDEFINED
+C. USER-DEFINED
+
+------------------------------------------
+
+Question 36
+A procedure is compiled and stored in the database as a schema object.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 37
+A procedure is a PL/SQL block containing local variables, a BEGIN, and an END. The  procedure_name after the END keyword is optional.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 38
+Procedures may have an exception section.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 39
+Subprograms are explicitly shared.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 40
+A procedure is a PL/SQL block containing local variables, a BEGIN, and an END. The  procedure_name after the END keyword is mandatory.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 41
+Types of parameter mode: IN, OUT, _________.
+
+Your Answer: IN OUT
+
+------------------------------------------
+
+Question 42
+The _____ is a special form of a variable, whose input values are initialized by the calling environment when the subprogram is called, and whose output values are returned to the calling environment when the subprogram returns control to the caller.
+
+Your Answer: PARAMETER
+
+------------------------------------------
+
+Question 43
+The ______ parameter passing lists the actual parameters in arbitrary order and uses the association operator.
+
+Your Answer: NAMED
+
+------------------------------------------
+
+Question 44
+The symbol for association operator is _____.
+
+Your Answer: =>
+
+------------------------------------------
+
+Question 45
+Parameter mode that treats parameter constants within the subprogram and cannot be changed by the subprogram.
+
+Your Answer: IN
+
+------------------------------------------
+
+Question 46
+Given the procedure below, how many parameters will return a value to the calling environment?
+CREATE  OR  REPLACE  PROCEDURE  show_emps
+(p_emp_id  NUMBER,  p_department_id OUT number,
+p_hiredate  IN OUT DATE) IS
+begin
+      . . . . . .
+End;
+
+Answer Choices:
+A. 1
+B. 2 (SELECTED)
+C. 0
+D. 3
+
+------------------------------------------
+
+Question 47
+Using an _______ parameter mode, you can pass a value into a procedure that can be updated within the procedure.
+
+Answer Choices:
+A. IN OUT (SELECTED)
+B. OUT
+C. All the options
+D. IN
+
+------------------------------------------
+
+Question 48
+What is missing in the given code below?
+CREATE or replace procedure raise_sal
+           (empid my_employees.employee_id%TYPE := 1234, emp_raise number)
+BEGIN
+        update employees
+        set salary = salary + (salary * (emp_raise/100) where employee_id =  emp;
+END;
+
+Answer Choices:
+A. Procedure name after END keyword
+B. IN
+C. Nothing is missing
+D. Not in the options
+E. Incomplete declaration of emp_raise parameter (SELECTED)
+
+------------------------------------------
+
+Question 49
+The parameter modes are specified in:
+
+Answer Choices:
+A. ACTUAL PARAMETER
+B. FORMAL PARAMETER (SELECTED)
+
+------------------------------------------
+
+Question 50
+What is the error of the given code?
+BEGIN
+add_dept(name  =>'new  dept',  'new  location');
+END;
+
+Answer Choices:
+A. Do not enclose parameter values with single quote
+B. Actual parameter values
+C. Invoking the procedure
+D. Positional parameter must come before named parameter (SELECTED)
+
+------------------------------------------
+
+Question 51
+You can include exception handler in stored functions.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 52
+A function cannot be invoked as an expression in an SQL Statement.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 53
+A stored function may or may not return a value to the calling environment.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 54
+A function must have a RETURN clause in the header and  at least one RETURN statement in the executable section.
+
+Answer Choices:
+A. True (SELECTED)
+B. False
+
+------------------------------------------
+
+Question 55
+Parameters are optional in stored function.
+
+Answer Choices:
+A. True
+B. False (SELECTED)
+
+------------------------------------------
+
+Question 56
+The functions used in SQL statements cannot use ____ or IN OUT modes.
+
+Answer Choices:
+A. IN
+B. OUT (SELECTED)
+
+------------------------------------------
+
+Question 57
+What is missing in the code below?
+create or replace function sample
+return number
+is
+begin
+   return 5+5;
+end;
+
+Answer Choices:
+A. Formal parameter (SELECTED)
+B. Variable
+C. Nothing is missing
+D. Expression evaluation
+
+------------------------------------------
+
+Question 58
+A function can be called as a part of:
+
+Answer Choices:
+A. PL/SL expression
+B. Both options (SELECTED)
+C. SQL statement
+
+------------------------------------------
+
+Question 59
+What is missing in the code below?
+create or replace function sample
+is num number(2);
+begin
+   num := 5+5;
+   return num;
+end;
+
+Answer Choices:
+A. Not in the options
+B. Formal parameter (SELECTED)
+C. No return value
+D. Size of the returning value
+
+------------------------------------------
+
+Question 60
+What is missing in the code below?
+create or replace function sample
+return
+is
+begin
+   return 5+5;
+end;
+
+Answer Choices:
+A. Expression evaluation
+B. Data type of the returned value (SELECTED)
+C. Nothing is missing
+D. Formal parameter
+
