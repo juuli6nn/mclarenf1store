@@ -40,12 +40,12 @@ const Cart = () => {
       {/* Render cart items from Context state */}
       {cart.map(item => (
         <div key={item.id} className="card mb-3 shadow-sm cart-item-card">
-          <div className="card-body">
-            <div className="row align-items-center">
+          <div className="card-body p-3">
+            <div className="row align-items-center g-2">
 
               {/* Product Info (data comes from Context) */}
-              <div className="col-12 col-md-5 mb-3 mb-md-0">
-                <h5 className="mb-2 fw-bold">{item.name}</h5>
+              <div className="col-12 col-md-5">
+                <h5 className="mb-1 fw-bold">{item.name}</h5>
                 <div className="d-flex align-items-center gap-2">
                   <span className="badge bg-orange">₱{formatPrice(item.price)}</span>
                   <small className="text-muted">per item</small>
@@ -53,7 +53,7 @@ const Cart = () => {
               </div>
 
               {/* Quantity Controls (trigger Context functions) */}
-              <div className="col-12 col-md-3 mb-3 mb-md-0">
+              <div className="col-12 col-md-3">
                 <div className="d-flex justify-content-center align-items-center gap-2">
                   <button
                     onClick={() => decreaseQty(item.id)}
@@ -77,7 +77,7 @@ const Cart = () => {
 
               {/* Subtotal and Remove Button */}
               <div className="col-12 col-md-4 text-center text-md-end">
-                <div className="mb-2">
+                <div className="mb-1">
                   <small className="text-muted">Subtotal:</small>
                   <h6 className="mb-0 fw-bold text-orange">₱{formatPrice(item.price * item.qty)}</h6>
                 </div>
@@ -98,8 +98,8 @@ const Cart = () => {
       {cart.length > 0 && (
         <div className="card shadow-lg mt-5 cart-total-card">
           <div className="card-body">
-            <div className="row align-items-center">
-              <div className="col-12 col-md-6 mb-3 mb-md-0">
+            <div className="row align-items-center g-2">
+              <div className="col-12 col-md-6">
                 <h4 className="mb-0">
                   <span className="text-muted">Order Total:</span>
                   <br />
