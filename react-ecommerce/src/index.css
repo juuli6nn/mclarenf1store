@@ -1079,7 +1079,7 @@ button:focus-visible {
 }
 
 .cart-total-card .card-body {
-  padding: 2rem;
+  padding: 1rem 2rem 1.75rem 2rem;
   overflow: hidden;
   min-height: auto !important;
   height: auto !important;
@@ -1575,5 +1575,90 @@ button:focus-visible {
 
   .hero-content {
     padding: 1.5rem;
+  }
+}
+
+
+/* Carousel Styling */
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel-image-wrapper {
+  position: relative;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.carousel-caption-fixed {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 10;
+  text-align: left;
+  pointer-events: none;
+}
+
+.carousel-caption-fixed .btn-orange {
+  pointer-events: auto;
+}
+
+.carousel-brand-logo {
+  margin-bottom: 1rem;
+}
+
+.carousel-brand-logo img {
+  width: 180px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.carousel-title {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+.btn-orange {
+  background-color: #F06E03;
+  color: white;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #E65100;
+  transform: translateX(5px);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption-fixed {
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .carousel-title {
+    font-size: 2.5rem;
+  }
+
+  .btn-orange {
+    padding: 10px 24px;
+    font-size: 0.9rem;
   }
 }
