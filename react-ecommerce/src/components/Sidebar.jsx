@@ -6,7 +6,7 @@ const Sidebar = ({ onCategorySelect }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/categories")
+    fetch("https://react-ecommerce-5m8r.onrender.com/api/categories")
       .then((res) => res.json())
       .then((data) => {
         setCategories(data);

@@ -28,7 +28,7 @@ const ProductList = () => {
 
     // Fetch all products when component loads
     useEffect(() => {
-        fetch("http://localhost:3001/api/products")
+        fetch("https://react-ecommerce-5m8r.onrender.com/api/products")
         .then((res) => res.json())
         .then((data) => {
             const formatted = data.map(item => ({
